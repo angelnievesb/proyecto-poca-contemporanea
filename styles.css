@@ -1,0 +1,259 @@
+/* Reset y variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    :root {
+    --azul-oscuro: #926b31;
+    --oro: #d8c13ebd;
+    --fondo: #af935e;
+    --verde: #723d25b6;
+    --sombra: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--fondo);
+    color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    
+    /* Header */
+    header {
+    background-color: var(--azul-oscuro);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--sombra);
+    }
+    
+    .logo {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    }
+    
+    nav {
+    display: flex;
+    gap: 1rem;
+    }
+    
+    nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+    
+    nav a:hover {
+    color: var(--verde);
+    }
+    
+    /* Main content */
+    main {
+    flex: 1;
+    padding: 2rem;
+    }
+    
+    ul {
+    list-style: none; /* Quita las viñetas */
+    padding-left: 0; /* Elimina el espacio izquierdo */
+    }
+    
+    /* Tarjetas corrientes.html */
+    .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    }
+    
+    /* Estilos de cada tarjeta */
+    .cardview {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    }
+    
+    .cardview:hover {
+    transform: translateY(-5px);
+    }
+    
+    /* Cuando se expanda la tarjeta */
+    .cardview.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    z-index: 1000;
+    background: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    }
+    
+    /* Sección de detalles con scroll */
+    .cardview.expanded .card-details {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    width: 100%;
+    flex-grow: 1;
+    }
+    
+    
+    .cardview.expanded::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+    }
+    
+    .cardview.expanded {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer y Edge */
+    }
+    
+    
+    
+    
+    /* Ajuste responsivo: en móviles, una tarjeta por fila */
+    @media (max-width: 600px) {
+    .card-container {
+    grid-template-columns: 1fr;
+    }
+    }
+    
+    
+    /* Equipo.html */
+    .miembros-equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    }
+    
+    .miembro {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--sombra);
+    }
+    
+    .miembro img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    }
+    
+    .redes-sociales a {
+    color: var(--verde);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    }
+    
+    /* Historia.html */
+    .timeline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    }
+    
+    .evento {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    position: relative;
+    }
+    
+    .evento img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    }
+
+    /* Banner */
+    .banner {
+    background: linear-gradient(rgb(104, 65, 29), rgba(235, 170, 96, 0.801));
+    background-size: cover;
+    color: white;
+    padding: 6rem 1rem;
+    text-align: center;
+    }
+    
+    .banner h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    }
+    
+    /* Estilos específicos de corrientes.html */
+    .titulo-principal {
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+    
+    .filosofo-info {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    }
+    
+    .filosofo-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    }
+    
+    /* Asegurar compatibilidad con el JS de expansión */
+    .cardview:not(.expanded) .card-details {
+    display: none;
+    }
+    
+    /* Footer */
+    footer {
+    background-color: var(--azul-oscuro);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    }
+    
+    /* Utilidades */
+    .no-scroll {
+    overflow: hidden;
+    }
+    
+    @media (max-width: 768px) {
+    nav {
+    display: none;
+    }
+    }

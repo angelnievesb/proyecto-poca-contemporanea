@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historia - Portal Filosófico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-oscuro: #926b31;
+      --oro: #d8c13ebd;
+      --fondo: #af935e;
+      --verde: #723d25b6;
+      --sombra: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      background: var(--fondo);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--azul-oscuro);
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin: 0.3rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .timeline-container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .titulo-seccion {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+      color: white;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: var(--oro);
+      transform: translateX(-50%);
+    }
+
+    .evento {
+      background: white;
+      border-radius: 12px;
+      margin: 2rem 0;
+      padding: 1rem;
+      box-shadow: var(--sombra);
+      width: 45%;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .evento img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .evento .fecha {
+      color: var(--verde);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .evento:nth-child(odd) {
+      left: 0;
+    }
+
+    .evento:nth-child(even) {
+      left: 55%;
+    }
+
+    .evento::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: var(--oro);
+      border: 3px solid white;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .evento:nth-child(odd)::before {
+      right: -8px;
+    }
+
+    .evento:nth-child(even)::before {
+      left: -8px;
+    }
+
+    .evento.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .evento {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    @media screen and (max-width: 768px) {
+      .evento,
+      .evento:nth-child(even),
+      .evento:nth-child(odd) {
+        width: 100%;
+        left: 0 !important;
+        margin-left: 0;
+      }
+
+      .timeline::before {
+        left: 8px;
+      }
+
+      .evento::before {
+        left: -12px !important;
+      }
+    }
+
+    footer {
+      background: var(--azul-oscuro);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Φ Filosofía</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="corrientes.html">Corrientes</a>
+      <a href="historia.html">Historia</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="video.html">Video</a>
+    </nav>
+  </header>
+
+  <div class="timeline-container">
+    <h2 class="titulo-seccion">Línea del Tiempo Filosófico</h2>
+    <div class="timeline">
+      <div class="evento">
+        <div class="fecha">1789-1799</div>
+        <h3>Revolucion Francesa</h3>
+        <p>Fue un proceso transformador que alteró profundamente la estructura política, social y económica de Francia, extendiendo su influencia a nivel global. Este acontecimiento se caracteriza por la caída del Antiguo Régimen y la instauración de una república basada en los ideales de libertad, igualdad y fraternidad.</p>
+        <div class="corrientes-relacionadas">
+          <strong>Causas:</strong> Desigualdad Social y Económica y Crisis Financiera
+        </div>
+        <img src="revolucion frencesa.jpg" alt="Grecia Antigua">
+      </div>
+
+      <div class="evento">
+        <div class="fecha">1793-1794</div>
+        <h3>Reinado del terror</h3>
+        <p> Durante la Convención Nacional, el Comité de Salud Pública, liderado por figuras como Robespierre, implementó medidas extremas para proteger la revolución, resultando en la ejecución de miles de presuntos enemigos. ​
+            Termino de la Revolución y Ascenso de Napoleón: La inestabilidad política llevó al golpe de Estado de 1799, donde Napoleón Bonaparte asumió el poder, poniendo fin a la Revolución y estableciendo el Consulado. </p>
+        <div class="corrientes-relacionadas">
+        </div>
+        <img src="reinado del terror.jpeg" alt="reinado del terror">
+      </div>
+
+      <div class="evento">
+        <div class="fecha">1799-1815</div>
+        <h3>Era Napoleonica</h3>
+        <p>Las Guerras Napoleónicas fueron una serie de conflictos militares que involucraron a Napoleón y sus aliados contra diversas coaliciones europeas. Estas guerras resultaron en cambios territoriales y políticos significativos en el continente.</p>
+        <div class="corrientes-relacionadas">
+          <strong>Legado:</strong> Reformas administrativas y legales, Difusion de ideas revolucionarias, Impacto militar
+        </div>
+        <img src="napoleon caballo.jpg" alt="Era napoleonica">
+      </div>
+
+      <div class="evento">
+        <div class="fecha">1810-1825</div>
+        <h3>Movimientos de Independencia en América</h3>
+        <p>las colonias españolas en América llevaron a cabo una serie de conflictos armados que resultaron en su emancipación. Estos movimientos, conocidos como las Guerras de Independencia Hispanoamericanas, fueron impulsados por factores como las reformas borbónicas, las ideas ilustradas y los efectos de la Revolución Francesa.Líderes destacados como Simón Bolívar, José de San Martín, Miguel Hidalgo y José María Morelos fueron fundamentales en estos procesos. Por ejemplo, Bolívar liberó territorios que hoy comprenden Venezuela, Colombia, Ecuador, Perú y Bolivia. En México, Hidalgo y Morelos encabezaron insurgencias que finalmente llevaron a la independencia en 1821. Estos movimientos resultaron en la creación de nuevas naciones y en la difusión de ideales democráticos en el continente. ​</p>
+        <div class="corrientes-relacionadas">
+        </div>
+        <img src="independencia en americas.jpeg" alt="americas">
+      </div>
+      <div class="evento">
+  <div class="fecha">1850-1914</div>
+  <h3>Segunda Revolucion Industrial</h3>
+  <p>La Segunda Revolución Industrial es un periodo clave de transformaciones tecnológicas y económicas que comenzó a mediados del siglo XIX y tuvo un profundo impacto sobre la sociedad, la economía y la política global.
+Avances Tecnológicos y Fuentes de Energía</p>
+  <div class="corrientes-relacionadas">
+    <strong>Avances tecnologicos:</strong> Electricidad y Petroleo.
+  </div>
+  <img src="segunda revolucion industiral.jpg" alt="segunda revolucion">
+</div>
+
+<div class="evento">
+  <div class="fecha">1870-1871</div>
+  <h3>Unificacion de Italia y Alemania</h3>
+  <p>Durante el siglo XIX, dos procesos de unificación de naciones importantes transformaron el mapa político de Europa: la unificación de Italia y la unificación de Alemania. Ambos procesos tuvieron repercusiones profundas en la política europea y mundial, y fueron clave en la creación de nuevas potencias que jugarían un papel crucial en los conflictos del siglo XX.</p>
+  <div class="corrientes-relacionadas">
+  </div>
+  <img src="benderas.jpg" alt="banderas">
+</div>
+
+<div class="evento">
+  <div class="fecha">1947-1991</div>
+  <h3>Guerra Fria</h3>
+  <p>La Guerra Fría fue un conflicto ideológico político y económico entre Estados Unidos y la Unión Soviética que comenzó después de la Segunda Guerra Mundial y se extendió hasta la disolución de la URSS en 1991 este enfrentamiento no se dio a través de combates directos sino a través de una intensa competencia en áreas como la militar la económica y la tecnológica el conflicto fue el resultado de profundas diferencias ideológicas entre el capitalismo promovido por Estados Unidos y el comunismo defendido por la Unión Soviética además de la desconfianza mutua y las tensiones derivadas de la guerra fría nuclear la Guerra Fría fue una lucha por la supremacía mundial donde ambos bloques intentaban influir sobre otros países y expandir su poder político y económico a nivel global</p>
+  <div class="corrientes-relacionadas">
+  </div>
+  <img src="guerra fria.jpg" alt="guerra fria">
+</div>
+<div class="evento">
+  <div class="fecha">1950-1970</div>
+  <h3>Movimiento por los derechos civiles</h3>
+  <p>Este movimiento buscaba la igualdad racial y el fin de la segregación en Estados Unidos. Liderado por figuras como Martin Luther King Jr., Malcolm X y Rosa Parks, logró hitos significativos como la Ley de Derechos Civiles de 1964 y la Ley de Derecho al Voto de 1965.
+Martin Luther King Jr.: Considerado el "padre" del movimiento por los derechos civiles, King fue fundamental en las décadas de 1950 y 1960, promoviendo la no violencia y la desobediencia civil como medios para lograr la igualdad racial. 
+Rosa Parks y el boicot de autobuses de Montgomery: En 1955, Rosa Parks se negó a ceder su asiento a un pasajero blanco en un autobús en Montgomery, Alabama, lo que desencadenó un boicot de 381 días que culminó con la eliminación de la segregación en los autobuses públicos.</p>
+  <div class="corrientes-relacionadas">
+  </div>
+  <img src="movimineto por los derechos civiles.jpg" alt="Edmund Husserl">
+</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Equipo Filosofía. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const eventos = document.querySelectorAll('.evento');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    eventos.forEach(evento => {
+      observer.observe(evento);
+    });
+  </script>
+</body>
+</html>
+

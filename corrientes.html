@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrientes Filosóficas Contemporaneas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Φ Filosofía</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="corrientes.html">Corrientes</a>
+            <a href="historia.html">Historia</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="video.html">Video</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-principal">Corrientes Filosóficas Contemporaneas</h1>
+        
+        <div class="card-container">
+            <!-- contexto historico -->
+            <div class="cardview" onclick="toggleDetails('contexto historico')">
+                <h3>Contexto Historico</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>Revoluciones industriales</li>
+                    <li>Avances cientificos</li>
+                    <li>Cambios sociopoliticos</li>
+                </ul>
+                
+                <div id="contexto historico" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="revolucion francesa.jpg" alt="revolucion francesa" class="filosofo-img">
+                        <div>
+                            <h4>Revoluciones Industriales (XVIII-XX)</h4>
+                            <p><strong>Revoluciones principales:</strong></p>
+                            <ul>
+                                <li>•Revolucion Francesa</li>
+                                <li>•Revolucion Rusa</li>
+                                <li>•Independencia de países en América y África.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="escolastica" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="penicilina.jpeg" alt="revolucion francesa" class="filosofo-img">
+                        <div>
+                            <h4>Avances Cientificos (1900-2009)</h4>
+                            <p><strong>Principales avances:</strong></p>
+                            <ul>
+                                <li>•Descubrimiento de la estructura de atomo</li>
+                                <li>•Teoria de la relatividad de ainstain</li>
+                                <li>•El primer antibiotico.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="escolastica" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="revolucion burguesa.jpeg" alt="revolucion francesa" class="filosofo-img">
+                        <div>
+                            <h4>Cambios Sociopoliticos (XVIII-XXI)</h4>
+                            <p><strong>Principales Cambios:</strong></p>
+                            <ul>
+                                <li>•Difusion de la democracia y la republica</li>
+                                <li>•Revoluciones burguesas y expansión de derechos</li>
+                                <li>•Movimientos independentistas y formación de estados-nación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Principales filósofos y sus ideas -->
+            <div class="cardview" onclick="toggleDetails('Principales filósofos y sus ideas')">
+                <h3>Principales filósofos y sus ideas</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>Friedrich Nietzsche</li>
+                    <li>Karl Marx</li>
+                    <li>Jean-Paul Sartre</li>
+                    <li>Michel Foucaulte</li>
+                </ul>
+                
+                <div id="Principales filósofos y sus ideas" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="friedrich nietzsche.webp" alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Friedrich Nietzsche (1844-1900)</h4>
+                            <p><strong>Ideas principales:</strong></p>
+                            <ul>
+                                <li>•Crítica al racionalismo</li>
+                                <li>•Consecuencias del racionalismo</li>
+                                <li>•Críticas a los filósofos griegos</li>
+                                <li>•Crítica a la religión</li>
+                                <li>•Esclavitud moral</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+             <div id="Principales filósofos y sus ideas" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="karl marx.jpeg" alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Karl Marx (1818-1883)</h4>
+                            <p><strong>Ideas principales:</strong></p>
+                            <ul>
+                                <li>•Materialismo HistoricoTr</li>
+                                <li>•Lucha de clases</li>
+                                <li>•Alineacion del trabajador</li>
+                                <li>•Conciencia de clases</li>
+                                <li>•Dictadura del ploretariado</li>
+                                <li>•Comunismo</li>
+                                <li>•Materialismo dialectico</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="Principales filósofos y sus ideas" class="card-details">
+                        <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                        <div class="filosofo-info">
+                            <img src="Jean-Paul Sartre.webp" alt="Místico medieval" class="filosofo-img">
+                            <div>
+                                <h4>Jean-Paul Sartre (1905-1980)</h4>
+                                <p><strong>Ideas principales:</strong></p>
+                                <ul>
+                                    <li>•El hombre es libre y responsable</li>
+                                    <li>•El hombre es subjetividad</li>
+                                    <li>•El hombre ocupa el centro de la existencia</li>
+                                    <li>•El sentido de la vida es una crecion intima</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="Principales filósofos y sus ideas" class="card-details">
+                        <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                        <div class="filosofo-info">
+                            <img src="Michel Foucault.webp" alt="Místico medieval" class="filosofo-img">
+                            <div>
+                                <h4>Michel Foucault  (1926-1984)</h4>
+                                <p><strong>Ideas principales:</strong></p>
+                                <ul>
+                                    <li>•Relacion entre poder y conocimiento</li>
+                                    <li>•Biopolitica y biopoder</li>
+                                    <li>•La genealogia del poder</li>
+                                    <li>•Critica a las instituciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card-container">
+            <!-- Obra representativa -->
+            <div class="cardview" onclick="toggleDetails('Obra representativa')">
+                <h3>Obra representativa</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>El ser y la nada de sartre</li>
+                </ul>
+                
+                <div id="Obra representativa" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="el ser y la nada.jpeg" alt="Tomás de Aquino" class="filosofo-img">
+                        <div>
+                            <h4>El ser y la nada de Sartre (1943)</h4>
+                            <ul>
+                                <li>Explora las relaciones interpersonales y la influencia del prójimo en la autoconciencia. Introduce el concepto de "la mirada", que convierte al individuo en un objeto, revelando facetas de sí mismo antes desconocidas. Aunque esta interacción es esencial para la autoconciencia, también puede generar conflicto y alienación, ya que la mirada del otro puede limitar la libertad personal y reducir al individuo a una identidad fija.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Influencia en la actualidad -->
+            <div class="cardview" onclick="toggleDetails('Influencia en la actualidad')">
+                <h3>Influencia en la actualidad</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>Filosofia politica</li>
+                    <li>Existencialismo</li>
+                    <li>Posmodernismo en el pensamiento actual</li>
+                </ul>
+                
+                <div id="Influencia en la actualidad" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="filosofia politica.png
+                        " alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Filosofia politica</h4>
+                            <ul>
+                                <li>La filosofía política ha sido clave en la comprensión y transformación de las estructuras sociales, económicas y gubernamentales. Ha contribuido a la reflexión sobre la democracia, los derechos humanos y la justicia social, influyendo en marcos normativos y políticas públicas. Pensadores como Rawls, Habermas y Foucault han replanteado conceptos de equidad, legitimidad y poder. Además, analiza los efectos de la globalización, el neoliberalismo y la crisis institucional, proporcionando herramientas para repensar la relación entre Estado, mercado y sociedad. Su impacto se extiende al ámbito jurídico y económico, abordando desigualdad, sostenibilidad y derechos en contextos cambiantes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filosofo-info">
+                        <img src="existencialismo.jpg
+                        " alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Existencialismo</h4>
+                            <ul>
+                                <li>El existencialismo es un movimiento filosófico del siglo XX influenciado por pensadores como Schopenhauer, Kierkegaard, Nietzsche y Husserl. Se centra en la libertad humana como valor fundamental, rechazando determinismos trascendentes, naturales o sociales. Su punto de partida es la vivencia existencial, analizando la existencia concreta y sus categorías.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filosofo-info">
+                        <img src=posmodernismo.webp
+                        " alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Posmodernismo en el penmsamiento actual</h4>
+                            <ul>
+                                <li>El posmodernismo cuestiona las ideas de verdad absoluta y progreso lineal, promoviendo una visión pluralista y relativista de la realidad. Filósofos como Lyotard, Foucault y Derrida influyeron en la crítica a los discursos totalizantes y en la deconstrucción de conceptos hegemónicos.
+
+                                    En política, ha impactado debates sobre identidad y multiculturalismo, pero también ha sido criticado por su relativismo. Aunque sigue influyendo en la filosofía, el arte y la literatura, hoy enfrenta una reacción que revaloriza la razón y la búsqueda de verdades compartidas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    ><img src="filosofos.jpg" alt="portada principal">
+    <footer>
+        <p>© 2025 Equipo Filosofía. Todos los derechos reservados.</p>
+        <p>Contacto: 744 400 2140</p>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            let selectedCard = document.getElementById(id).closest('.cardview');
+
+            if (selectedCard.classList.contains('expanded')) {
+                closeCard(selectedCard);
+            } else {
+                document.querySelectorAll('.cardview').forEach(card => {
+                    card.classList.remove('expanded');
+                });
+
+                selectedCard.classList.add('expanded');
+                document.body.classList.add('no-scroll');
+            }
+        }
+
+        function closeCard(card) {
+            card.classList.remove('expanded');
+            document.body.classList.remove('no-scroll');
+        }
+    </script>
+</body>
+</html>

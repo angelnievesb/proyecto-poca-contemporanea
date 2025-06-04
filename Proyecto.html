@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrientes Filosóficas Contemporaneas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Φ Filosofía</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="corrientes.html">Corrientes</a>
+            <a href="historia.html">Historia</a>
+            <a href="equipo.html">Equipo</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-principal">Corrientes Filosóficas Contemporaneas</h1>
+        
+        <div class="card-container">
+            <!-- Escolástica -->
+            <div class="cardview" onclick="toggleDetails('escolastica')">
+                <h3>Contexto Historico</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>Revoluciones industriales</li>
+                    <li>Avances cientificos</li>
+                    <li>Cambios sociopoliticos</li>
+                </ul>
+                
+                <div id="escolastica" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="revolucion francesa.jpg" alt="revolucion francesa" class="filosofo-img">
+                        <div>
+                            <h4>Revoluciones industriales (XVIII-XX)</h4>
+                            <p><strong>Revoluciones principales:</strong></p>
+                            <ul>
+                                <li>Revolucion Francesa</li>
+                                <li>Revolucion Rusa</li>
+                                <li>independencia de países en América y África.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="escolastica" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="revolucion francesa.jpg" alt="revolucion francesa" class="filosofo-img">
+                        <div>
+                            <h4>Revoluciones industriales (XVIII-XX)</h4>
+                            <p><strong>Revoluciones principales:</strong></p>
+                            <ul>
+                                <li>Revolucion Francesa</li>
+                                <li>Revolucion Rusa</li>
+                                <li>independencia de países en América y África.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="escolastica" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="revolucion francesa.jpg" alt="revolucion francesa" class="filosofo-img">
+                        <div>
+                            <h4>Revoluciones industriales (XVIII-XX)</h4>
+                            <p><strong>Revoluciones principales:</strong></p>
+                            <ul>
+                                <li>Revolucion Francesa</li>
+                                <li>Revolucion Rusa</li>
+                                <li>independencia de países en América y África.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Misticismo -->
+            <div class="cardview" onclick="toggleDetails('misticismo')">
+                <h3>Principales filósofos y sus ideas</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>Friedrich Nietzsche</li>
+                    <li>Karl Marx</li>
+                    <li>Jean-Paul Sartre</li>
+                    <li>Michel Foucaulte</li>
+                </ul>
+                
+                <div id="misticismo" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="https://source.unsplash.com/random/200x200?medieval-monk" alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Maestro Eckhart (1260-1328)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Tratados y sermones</li>
+                                <li>El libro del consuelo divino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <!-- Escolástica -->
+            <div class="cardview" onclick="toggleDetails('escolastica')">
+                <h3>Obra representativa</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>El ser y la nada de sartre</li>
+                </ul>
+                
+                <div id="escolastica" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="https://source.unsplash.com/random/200x200?thomas-aquinas" alt="Tomás de Aquino" class="filosofo-img">
+                        <div>
+                            <h4>Tomás de Aquino (1225-1274)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Summa Theologiae</li>
+                                <li>Summa contra Gentiles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Misticismo -->
+            <div class="cardview" onclick="toggleDetails('misticismo')">
+                <h3>Influencia en la actualidad</h3>
+                <p>Siglo XVIII</p>
+                <ul>
+                    <li>Filosofia politica</li>
+                    <li>Existencialismo</li>
+                    <li>Posmodernismo en el pensamiento actual</li>
+                </ul>
+                
+                <div id="misticismo" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="https://source.unsplash.com/random/200x200?medieval-monk" alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Maestro Eckhart (1260-1328)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Tratados y sermones</li>
+                                <li>El libro del consuelo divino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    ><img src="filosofos.jpg" alt="portada principal">
+    <footer>
+        <p>© 2024 Equipo Filosofía. Todos los derechos reservados.</p>
+        <p>Contacto: 744 400 2140</p>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            let selectedCard = document.getElementById(id).closest('.cardview');
+
+            if (selectedCard.classList.contains('expanded')) {
+                closeCard(selectedCard);
+            } else {
+                document.querySelectorAll('.cardview').forEach(card => {
+                    card.classList.remove('expanded');
+                });
+
+                selectedCard.classList.add('expanded');
+                document.body.classList.add('no-scroll');
+            }
+        }
+
+        function closeCard(card) {
+            card.classList.remove('expanded');
+            document.body.classList.remove('no-scroll');
+        }
+    </script>
+</body>
+</html>
